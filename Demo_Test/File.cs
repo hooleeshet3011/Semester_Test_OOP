@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Demo_Test
 {
-
     public class File : Thing
     {
         private string _extension;
@@ -28,5 +27,5 @@ namespace Demo_Test
             Console.WriteLine($"File '{Name}.{_extension}' Size: {_size} bytes");
         }
     }
-
 }
+
