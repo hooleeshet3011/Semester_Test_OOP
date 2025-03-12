@@ -8,19 +8,14 @@ namespace Demo_Test
 {
     public abstract class Thing
     {
-        string _name;
-        public string Name()
+        public string Name { get; }
+
+        protected Thing(string name)
         {
-            return _name;
+            Name = name;
         }
 
-        public Thing(string name)
-        {
-            _name = name;
-
-        }
         public abstract void Print();
         public abstract int Size();
-        
     }
 }
